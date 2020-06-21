@@ -1,0 +1,196 @@
+/**
+ * ----------------------------------------
+ * animation tracking-in-expand
+ * ----------------------------------------
+ */
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.tracking-in-expand {
+  -webkit-animation: tracking-in-expand .92s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+          animation: tracking-in-expand .92s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+/*SHADOW*/
+@-webkit-keyframes shadow-drop-center {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 50px 0px rgba(0, 0, 0, 0.35);
+            box-shadow: 0 0 50px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+@keyframes shadow-drop-center {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 50px 0px rgba(0, 0, 0, 0.35);
+            box-shadow: 0 0 50px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+.shadow-drop-center {
+  -webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.850, 0.460, 0.850, 0.940) both;
+          animation: shadow-drop-center 0.4s cubic-bezier(0.850, 0.460, 0.850, 0.940) both;
+}
+/**
+ * ----------------------------------------
+ * animation puff-in-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes puff-in-center {
+  0% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes puff-in-center {
+  0% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+.puff-in-center {
+  -webkit-animation: puff-in-center 350ms cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+          animation: puff-in-center 350ms cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+.done {
+  text-decoration: line-through;
+}
+.container{
+  margin: 160px auto;
+  width: 500px;
+  text-align: center;
+  font-family: 'Bangers', cursive;
+  font-size: 2em;
+
+}
+.logo{
+	font-size: 3em;
+  cursor: default;
+}
+.list-img{
+  width: 128px;
+  height: 128px;
+  margin-left: 20px;
+}
+.input{
+  margin-top: 3rem;
+}
+
+#footer {
+   position:fixed;
+   padding-top: 3px;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+   background:#212529;
+   text-align: center;
+   font-family: 'Bangers', cursive;
+   font-size: 1.2em;
+   letter-spacing: 1px;
+   color: white;
+}
+.delete{
+  margin: 0px -1.8px 0px 0px;
+}
+.delete:hover {
+  border-color: #212529;
+  color: #fff;
+  background-image: -webkit-linear-gradient(45deg, #FF0000 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #FF0000 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background .4s ease-in-out;
+}
+.button:hover {
+  border-color: #f1c40f;
+  color: #fff;
+  background-image: -webkit-linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background .4s ease-in-out;
+}
+.delete-button{
+  float: right;
+}
+#user-input{
+  text-align: center;
+  border: 3px solid #212529;
+  border-radius: 5px;
+  border-bottom-width: 4.4px;
+}
+
+
+
+/* IE 6 */
+* html #footer {
+   position:absolute;
+   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+}
+ul{
+  padding-left: none;
+}
+
+li {
+  list-style-type: none;
+  cursor: pointer;
+  border: 3px solid #212529;
+  border-radius: 5px;
+  margin-top: 6px;
+  margin-left: 160px;
+  margin-right: 200px;
+}
+body{
+	background-color: #ff4500 !important;
+}
